@@ -1,0 +1,35 @@
+{
+  "name": "boulder-daily-reports",
+  "version": "1.0.0",
+  "description": "Automated daily construction site report generation for Boulder Construction",
+  "type": "module",
+  "main": "daily-report-workflow.ts",
+  "scripts": {
+    "dev": "trigger.dev dev",
+    "deploy": "trigger.dev deploy",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trigger.dev",
+    "workflow",
+    "automation",
+    "construction",
+    "airtable",
+    "pdf",
+    "email"
+  ],
+  "author": "Uma Patel",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.5",
+    "@trigger.dev/sdk": "4.4.3",
+    "axios": "^1.6.0",
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/nodemailer": "^6.4.0",
+    "typescript": "^5.0.0"
+  }
+}
